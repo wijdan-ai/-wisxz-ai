@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Repository GitHub Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        a.tombol {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #24292e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        a.tombol:hover {
+            background-color: #0366d6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Selamat Datang di Website <span th:text="${namaPembuat}"></span></h1>
+        <p>Website ini dibuat menggunakan Java Spring Boot!</p>
+        
+        <h3>Proyek Saat Ini: <span th:text="${namaProject}"></span></h3>
+        
+        <p>Silakan kunjungi repository saya di GitHub untuk melihat source code-nya:</p>
+        <a class="tombol" th:href="${linkRepo}" target="_blank">Lihat Repository GitHub</a>
+    </div>
+
+</body>
+</html>
