@@ -1,9 +1,4 @@
 /**
- * Wisxz-AI - Program Java Sederhana tentang Artificial Intelligence
- * Tugas KKA
- * 
- * Program ini mensimulasikan chatbot AI sederhana dengan nama "Wisxz-AI"
- */
 
 import java.util.Scanner;
 
